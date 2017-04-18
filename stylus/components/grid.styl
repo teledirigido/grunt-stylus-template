@@ -1,0 +1,46 @@
+//  Local variables
+base = 2
+limit = 4
+
+// Affects all grids
+[class^="span-"]
+	clear()
+
+
+//============================================================
+// Grid System
+//============================================================
+
+@media mobile
+	
+	[class^='span-'] .item
+		float:none;
+		display:block;
+		width:100%;
+
+	// for i in 1 .. limit
+	// 	.span-{i} .item
+	// 		float:none;
+	// 		display:block;
+	// 		width:100%;
+
+
+@media tablet
+
+	for i in base .. 3
+		.span-{i} .item
+			float left
+			width 50%
+
+	for i in 4 .. limit
+		.span-{i} .item
+			float left
+			width (100%/3)
+
+
+@media desktop
+
+	for i in base .. limit
+		.span-{i} .item
+			float left
+			width (100%/i)

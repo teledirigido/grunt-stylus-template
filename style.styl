@@ -1,0 +1,81 @@
+/*!
+Theme Name: [Template Name]
+Theme URI: http://mellorandsmith.com
+Author: Mellor&Smith
+Author URI: http://www.mellorandsmith.com/
+Author Design: [Designer] - [designer]@mellorandsmith.com
+Author Front-end and Integration: Miguel Garrido - miguel@mellorandmisth.com
+Description: Mellor&Smith theme.
+Version: 1.0
+*/
+
+// Our boilerplate 
+@require 'stylus/base/default'
+
+// Variables, colors, functions, etc
+@require 'stylus/global'
+// @require 'stylus/base/print.css'
+@require 'stylus/base/reset'
+
+html, body
+  margin:0
+  padding:0
+  min-height:100%
+  width:100%
+
+body
+  font-family:body-font
+  color: #111
+  font-size: 1rem
+  font-smooth: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: greyscale
+
+  @media mobile
+    min-width:rem(420px)
+    
+.content-wrapper
+  div-wrapper(960px)
+  padding-top:2rem
+  padding-bottom:2rem
+
+
+
+// Colours
+white = #fff
+black = #333
+red =  darken(#FF0000,30%)
+colors = {
+  white: white,
+  black: black,
+  red: red,
+}
+
+for key,value in colors
+  .bg{key}
+    background-color value
+  .{key}
+    color value
+
+for i in 1 .. 10
+  .mt{i}
+    margin-top unit(i,'rem')
+  .mb{i}
+    margin-bottom unit(i,'rem')
+  .pt{i}
+    padding-top unit(i,'rem')
+  .pb{i}
+    padding-bottom unit(i,'rem')
+
+// Vendors
+// @require 'stylus/vendors/font-awesome.css'
+
+// Components - Default
+@require 'stylus/components/grid'
+
+// Partials
+@require 'stylus/components/entry-content'
+@require 'stylus/components/fonts'
+@require 'stylus/components/header'
+@require 'stylus/components/footer'
+@require 'stylus/components/index'
