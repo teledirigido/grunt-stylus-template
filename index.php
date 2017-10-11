@@ -100,7 +100,7 @@
 		</div>
 
 		<div class="content-wrapper black">
-			SASS, Font-Awesome, Javascript Template created from Miguel.
+			Stylus, Font-Awesome, Javascript Template created from Miguel.
 		</div>
 
 
