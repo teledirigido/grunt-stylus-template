@@ -16,6 +16,7 @@ p()
 	font-family: body-font
 	color: text-color
 	line-height: textlh
+	
 
 //============================================================
 // Wrappers
@@ -29,7 +30,7 @@ div-wrapper(value)
 	position: relative
 	// padding-left: 2rem
 	// padding-right: 2rem
-
+		
 	@media screen and ( max-width: (value+50)px )
 		padding-left: 2rem
 		padding-right: 2rem
@@ -39,6 +40,13 @@ div-wrapper(value)
 		width: 100%
 		min-width: 320px
 
+absolute-full()
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%	
+	
 //============================================================
 // Media Queries
 //============================================================

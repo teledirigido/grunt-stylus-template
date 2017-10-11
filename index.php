@@ -12,6 +12,7 @@
 		<meta name="author" content="">
 
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
@@ -21,10 +22,12 @@
 	<body>
 		
 		<script>
-			var _gaq=[['_setAccount','UA-XXXXXXX-X'],['_trackPageview']];
-			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g,s)}(document,'script'));
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-XXXXXXXX-X', 'auto');
+		  ga('send', 'pageview');
 		</script>
 
 		<!--[if lte IE 9]>

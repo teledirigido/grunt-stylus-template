@@ -1,1 +1,2 @@
-# html-sass-grunt-template
+# html-stylus-grunt-template
+This is an example

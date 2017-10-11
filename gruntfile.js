@@ -23,8 +23,14 @@ module.exports = function(grunt) {
         options : {
           sourceMap : true,
         },
-        src : './js/dist/*.js',
-        dest : './js/scripts.min.js'
+        // src : './js/dist/*.js',
+        // dest : './js/scripts.min.js'
+        files: {
+          'js/scripts.min.js': [
+            './js/dist/scripts.js',
+            './js/dist/header.js',
+          ]
+        }
       }
     },
     browserSync: {
@@ -38,7 +44,7 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "http://miguel.dev/testing/html-stylus-grunt-template/"
+          proxy: "http://miguel.dev/testing/grunt-stylus-template/"
         }
       }
     },
@@ -75,7 +81,8 @@ module.exports = function(grunt) {
         options : { livereload: true },
       },
       scripts: {
-        files: ['./js/*.js'],
+        files: ['./js/src/*.js'],
+        tasks: ['babel','uglify'],
         options: {
           livereload: true
         }
