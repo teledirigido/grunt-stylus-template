@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-	
 	<head>
-		
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title></title>
-
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">        
 		<meta name="description" content="">
 		<meta name="author" content="">
-
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
-
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script> -->
 	</head>
-	
 	<body>
-		
 		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-XXXXXXXX-X', 'auto');
-		  ga('send', 'pageview');
+			if (window.location.host==="domain.com" || window.location.host==="www.domain.com") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXX-X');
+      }
 		</script>
 
 		<!--[if lte IE 9]>
@@ -36,11 +26,11 @@
 
 		<div class="bgblack">
 			<div class="content-wrapper white">
-				<h1>H1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo.</h1>
-				<h2>H2 Distinctio id quaerat, eos molestiae tempora inventore. Atque, esse, commodi.</h2>
-				<h3>H3 Cum quisquam sunt, rem modi, enim corporis error nam impedit.</h3>
-				<h4>H4 Architecto quos quis delectus sapiente dolore amet facilis, possimus consequuntur.</h4>
-				<h5>H5 Cumque provident nisi eligendi maxime perferendis ipsum qui quam, tempore!</h5>
+				<h1>PHP, Stylus &amp; Grunt template</h1>
+				<h2>Minimal boilerplate you must scale</h2>
+				<h3>jQuery free, Babel JS included for fast front-end development.</h3>
+				<h4>Don't ask if it is responsive, just don't. This is something you should know already.</h4>
+				<h5>OOCSS, simple, unbloated and minimal. <strong>161Kb CSS File size</strong> incluing Font-awesome 4.7.0</h5>
 			</div>
 			
 		</div>
@@ -48,60 +38,81 @@
 		<div class="bgwhite">
 
 			<div class="content-wrapper">
-
+				<h2>Wordpress ready entry-content styles</h2>
+				<h4 class="mb1">At: <pre>stylus/components/entry-content.styl</pre></h4>
 				<div class="entry-content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vel asperiores dignissimos maiores rerum, alias fugit. Nihil nostrum nam est suscipit tenetur natus vel animi qui dolor sapiente rem quibusdam error, voluptatem quas nobis impedit accusamus cum quos culpa aliquam voluptates mollitia, ea. Sapiente omnis ipsa, laborum repellendus ex dolore accusamus vel aperiam! Numquam eligendi id quia praesentium incidunt, esse ratione dicta officia eum quae cupiditate autem excepturi saepe, ex a soluta pariatur, deserunt voluptatum temporibus perspiciatis ad fugiat nostrum porro. Nemo laboriosam quis dolorum natus accusantium quos, sint nesciunt dolorem quas! Quae voluptatum, eveniet. Repellat repudiandae explicabo quod alias.</p>
-					<ul class="menu">
-						<li>Menu Item 1</li>
-						<li>Menu Item 2</li>
-						<li>Menu Item 3</li>
+					<p>This template has been created thinking for <strong>front-end development</strong> and clean user interfaces. It uses Stylus, Grunt, Javascript and PHP. You may find it useful if you develop <a href="//wordpress.org" target="_blank">Wordpress</a> Websites. This is an unpretencious boilerplate, it must be scalable and it follows certain <a href="https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/">OOCSS</a> and you may find it similar to <a href="//tachyons.io/" target="_blank">tachyons</a>, although is 100x less bloated (according to pseudo-science).</p>
+					<ul>
+						<li>All CSS is wrapperd up under <pre>style.styl</pre></li>
+						<li>Find <i>global variables</i>, font awesome and <i>media queries</i> variables under <pre>stylus/global.styl</pre></li>
+						<li>Base CSS is under <pre>stylus/base</pre>, you won't need to edit this too much. I hope.</li>
+						<li>Everything can be a <i>component</i> under <pre>stylus/components</pre></li>
+						<li><span class="red">Looking for fancy colours?</span> check out <pre>style.styl</pre> and make your own combination!.</li>
 					</ul>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus vitae, dolorem asperiores incidunt vel deleniti officiis laudantium sapiente aperiam.</p>
-				</div>
-		
-				<div class="span-2 pb2">
-					<div class="item">
-						<p><strong>Span 2 column 1</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, explicabo.</p>
-					</div>
-					<div class="item">
-						<p><strong>Span 2 column 2</strong> Excepturi saepe ab molestias repudiandae facilis asperiores, reiciendis sit deserunt.</p>
-					</div>
 				</div>
 
-				<div class="span-3 pb2">
-					<div class="item">
-						<p><strong>Span 3 column 1</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, explicabo.</p>
-					</div>
-					<div class="item">
-						<p><strong>Span 3 column 2</strong> Excepturi saepe ab molestias repudiandae facilis asperiores, reiciendis sit deserunt.</p>
-					</div>
-					<div class="item">
-						<p><strong>Span 3 column 3</strong> Excepturi saepe ab molestias repudiandae facilis asperiores, reiciendis sit deserunt.</p>
-					</div>
+				<h2>Font Awesome Stylus 4.7.0 included and Flex Grid included</h2>
+				<h4 class="mb1">At: <pre>bower_components/font-awesome-stylus/index.styl</pre> and <pre>stylus/components/grid.styl</pre></h4>
+				<div class="flex-3">
+					<div class="item"><i class="fa fa-fw fa-facebook"></i> Menu Item 1</div>
+					<div class="item"><i class="fa fa-fw fa-instagram"></i> Menu Item 2</div>
+					<div class="item"><i class="fa fa-fw fa-twitter"></i> Menu Item 3</div>
 				</div>
-
-				<div class="span-4">
-					<div class="item">
-						<p><strong>Span 4 column 1</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, explicabo.</p>
-					</div>
-					<div class="item">
-						<p><strong>Span 4 column 2</strong> Excepturi saepe ab molestias repudiandae facilis asperiores, reiciendis sit deserunt.</p>
-					</div>
-					<div class="item">
-						<p><strong>Span 4 column 3</strong> Excepturi saepe ab molestias repudiandae facilis asperiores, reiciendis sit deserunt.</p>
-					</div>
-					<div class="item">
-						<p><strong>Span 4 column 4</strong> Excepturi saepe ab molestias repudiandae facilis asperiores, reiciendis sit deserunt.</p>
-					</div>
-				</div>
-
 			</div>
+
+			<div class="bgred white">
+				<div class="content-wrapper content-form mt2">
+					<h2>Minimal form styles</h2>
+					<h4 class="mb1">At: <pre>stylus/components/forms.styl</pre></h4>
+					<form action="#">
+						<div class="field">
+							<input type="text" class="text" placeholder="Contact form 7 styles included">
+						</div>
+						<div class="field">
+							<input type="email" class="text"  placeholder="Pretty cool, no?">
+						</div>
+						<div class="field-submit">
+							<button class="submit">The answer is yes</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		
+			<div class="content-wrapper">
+				
+				<div class="mt2">
+					<h2>Float Span for 2, 3 or N Columns</h2>
+					<h4 class="mb1">At: <pre>stylus/components/grid.styl</pre></h4>
+					<div class="span-2 pb2">
+						<div class="item">
+							<p>This boilerplate is jQuery free, it uses Babel ES6 for your modern Javascript and Browser Sync.</p>
+						</div>
+						<div class="item">
+							Scripts files are under under <pre>js/src</pre> and they're exported at <pre>js/dist</pre>. They are also minified into a <pre>scripts.min.js</pre> files.
+						</div>
+					</div>
+				</div>
+
+				<div class="mt2">
+					<h2>Flex Grid for modern websites</h2>
+					<h4 class="mb1">At: <pre>stylus/components/grid.styl</pre></h4>
+					<div class="flex-2 pb2">
+						<div class="item">
+							<p>Yes, for modern browsers you can use Flex. Hope you're not into developing IE9 compatible websites.</p>
+						</div>
+						<div class="item">
+							<p>Want to see real life projects? Check my projects at <a href="//miguel.nz/projects" target="_blank">miguel.nz/projects</a>. Many of them if not all have been developed following this boilerplate.</p>
+						</div>
+					</div>
+				</div>				
+			</div>
+
 		</div>
 
-		<div class="content-wrapper black">
-			Stylus, Font-Awesome, Javascript Template created from Miguel.
+		<div class="bgblue white p2 text-center">
+			<p>PHP, Stylus &amp; Grunt template</p>
+			<p class="pt1">Created at <a href="//miguel.nz" target="_blank">miguel.nz</a></p>
 		</div>
-
 
 		<!-- <script type="text/javascript" src="js/dist/scripts.js"></script> -->
 		<!-- <script type="text/javascript" src="js/dist/header.js"></script> -->

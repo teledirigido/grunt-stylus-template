@@ -1,6 +1,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,
 h5,h6,pre,form,fieldset,input,textarea,
-p,blockquote,th,td,figure,nav,main,video
+p,blockquote,th,td,figure,nav,main,video,
+button
 	margin:0; 
 	padding:0; 
 	box-sizing(border-box)
@@ -105,11 +106,15 @@ input[type="submit"]
 	
 pre
 	display: inline-block
-	background-color:rgba(black,0.1)
-	padding:0.3rem
-	border-radius:5px
-	border:1px solid rgba(black,0.15)
-	vertical-align:middle
+	background-color:#f8f8f8
+	padding:0rem 0.5rem
+	border-radius 5px
+	border 1px solid rgba(black,0.15)
+	vertical-align middle
+	color black
+	@media mobile
+		white-space: pre-wrap; 
+		word-break break-all
 	
 button
 	border 0 none
@@ -138,3 +143,7 @@ button
 	.table-cell 
 		display: table-cell;
 		vertical-align:middle;
+
+.strong,
+.bold
+	font-weight bold

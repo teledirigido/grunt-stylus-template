@@ -1,9 +1,9 @@
 /*!
-Theme Name: Custom Template
-Theme URI: http://miguel.nz
-Author: Miguel Garrido Iglesias
-Author URI: http://www.miguel.nz/
-Description: HTML Stylus Grunt Template.
+Theme Name: PHP, Stylus & Grunt template
+Theme URI: http://miguel.nz/template
+Author: Miguel Garrido
+Author URI: http://miguel.nz/
+Description: PHP, Stylus & Grunt template. Read more at www.miguel.nz/template
 Version: 1.0
 */
 
@@ -31,22 +31,17 @@ body
   line-height textlh
   @media mobile
     min-width:rem(420px)
-    
-.content-wrapper
-  div-wrapper(960px)
-  padding-top:2rem
-  padding-bottom:2rem
-
-
-
+  
 // Colours
 white = #fff
 black = #333
 red =  darken(#FF0000,30%)
+blue = darken(#3A779C,20%)
 colors = {
   white: white,
   black: black,
   red: red,
+  blue: blue
 }
 
 for key,value in colors
@@ -56,6 +51,10 @@ for key,value in colors
     color value
 
 for i in 1 .. 10
+  .p{i}
+    padding unit(i,'rem')
+  .m{i}
+    margin unit(i,'rem')
   .mt{i}
     margin-top unit(i,'rem')
   .mb{i}
@@ -66,6 +65,16 @@ for i in 1 .. 10
     padding-bottom unit(i,'rem')
 
 
+// Content
+.content-wrapper
+  div-wrapper(960px)
+  padding-top:2rem
+  padding-bottom:2rem
+
+.bgwhite a
+  color blue
+  text-decoration underline
+  
 // Components - Default
 @require 'stylus/components/grid'
 
@@ -75,3 +84,7 @@ for i in 1 .. 10
 @require 'stylus/components/header'
 @require 'stylus/components/footer'
 @require 'stylus/components/index'
+@require 'stylus/components/forms'
+
+// Components - Externals
+@require 'bower_components/font-awesome-stylus/index'

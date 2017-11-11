@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     babel: {
       options: {
-        "sourceMap": true,
+        'sourceMap': true,
         presets: ['es2015']
       },
       dist: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "http://miguel.dev/testing/grunt-stylus-template/"
+          proxy: "http://localhost/testing/html-stylus-grunt-template/"
         }
       }
     },
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
     stylus: {
       compile: {
         options: {
-          compress: false,
+          compress: true,
           sourcemap:{
             inline:true
           },
