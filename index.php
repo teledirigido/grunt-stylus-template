@@ -53,7 +53,7 @@
 				<h2>Minimal boilerplate you must escalate</h2>
 				<h3>jQuery free, Babel JS included for fast front-end development.</h3>
 				<h4>Don't ask if it is responsive, just don't. This is something you should know already.</h4>
-				<h5>OOCSS, simple, unbloated and minimal. <strong>161Kb CSS File size</strong> incluing Font-awesome 4.7.0</h5>
+				<h5>OOCSS, simple, unbloated and minimal. <strong>43Kb CSS File size</strong> incluing Font-awesome 4.7.0</h5>
 			</div>
 			
 		</div>

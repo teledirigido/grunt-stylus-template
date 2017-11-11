@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         options: {
           compress: true,
           sourcemap:{
-            inline:true
+            inline:false
           },
           paths: ['stylus'],
           import: ['stylus/*']
