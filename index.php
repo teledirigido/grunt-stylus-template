@@ -58,6 +58,7 @@
 					<div class="item"><i class="fa fa-fw fa-instagram"></i> Menu Item 2</div>
 					<div class="item"><i class="fa fa-fw fa-twitter"></i> Menu Item 3</div>
 				</div>
+				<p class="pt1">Read more about <a href="https://github.com/raulghm/Font-Awesome-Stylus" target="_blank">Font Awesome Stylus here</a>.</p>
 			</div>
 
 			<div class="bgred white">
@@ -111,7 +112,11 @@
 
 		<div class="bgblue white p2 text-center">
 			<p>PHP, Stylus &amp; Grunt template</p>
-			<p class="pt1">Created at <a href="//miguel.nz" target="_blank">miguel.nz</a></p>
+			<p class="pt1">
+				<a href="https://github.com/teledirigido/html-stylus-grunt-template" target="_blank"><i class="fa fa-fw fa-2x fa-github"></i></a>
+				<a href="http://miguel.nz" target="_blank"><i class="fa fa-fw fa-2x fa-link"></i></a>
+				<a href="http://twitter.com/vuelvolar" target="_blank"><i class="fa fa-fw fa-2x fa-twitter"></i></a>
+			</p>
 		</div>
 
 		<!-- <script type="text/javascript" src="js/dist/scripts.js"></script> -->
