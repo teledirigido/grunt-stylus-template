@@ -1,6 +1,6 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,
 h5,h6,pre,form,fieldset,input,textarea,
-p,blockquote,th,td,figure,nav
+p,blockquote,th,td,figure,nav,main,video
 	margin:0; 
 	padding:0; 
 	box-sizing(border-box)
@@ -12,14 +12,19 @@ footer,header,hgroup,menu,nav,section
 h1,h2,h3,h4,h5,h6 
 	font-weight: normal 
 	line-height: textlh
+
 a 
 	text-decoration:none
 	outline:0 none
 	color:inherit
+
 a img 
 	border:0 none;
+
 hr 
-	border:0 none; display:block;
+	border:0 none;
+	display:block;
+
 blockquote
 	margin-left:25px; 
 
@@ -31,9 +36,9 @@ input[type="submit"]
 
 .ul-horz
 	list-style none
-.ul-horz > li 
-	display:inline-block 
-	position:relative
+	& > li 
+		display:inline-block 
+		position:relative
 
 .ul-vert 
 	margin-left:0
@@ -87,14 +92,6 @@ input[type="submit"]
 
 .text-right
 	text-align: right
-
-.table-wrap
-	display:table
-	width:100%
-	height:100%
-	.table-cell 
-		display: table-cell; 
-		vertical-align:middle;
 		
 .nowrap
 	white-space:nowrap
@@ -132,3 +129,12 @@ button
 	background: #333; 
 	color:#fff; 
 	text-shadow:0 0 1px #333;
+
+// Verital Aligned content
+.table-wrap
+	display:table
+	width:100%
+	height:100%
+	.table-cell 
+		display: table-cell;
+		vertical-align:middle;
