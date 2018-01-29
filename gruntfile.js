@@ -61,6 +61,7 @@ module.exports = function(grunt) {
         },
         files: {
           'style.css' : 'style.styl',
+          'fonts/fonts.css': 'fonts/fonts.styl'
         }
       }
     },
@@ -76,7 +77,6 @@ module.exports = function(grunt) {
       },
       stylus: {
         files: ['*.styl','./**/*.styl'],
-        // files: ['preview/style.styl'],
         tasks: ['stylus'],
         options : { livereload: true },
       },
