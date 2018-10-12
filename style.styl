@@ -31,24 +31,6 @@ body
   line-height textlh
   @media mobile
     min-width:rem(420px)
-  
-// Colours
-white = #fff
-black = #333
-red =  darken(#FF0000,30%)
-blue = darken(#3A779C,20%)
-colors = {
-  white: white,
-  black: black,
-  red: red,
-  blue: blue
-}
-
-for key,value in colors
-  .bg{key}
-    background-color value
-  .{key}
-    color value
 
 for i in 1 .. 10
   .p{i}
@@ -74,7 +56,7 @@ for i in 1 .. 10
 .bgwhite a
   color blue
   text-decoration underline
-  
+
 // Components - Default
 @require 'stylus/components/grid'
 
